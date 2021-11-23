@@ -1,0 +1,62 @@
+@use "typography-mixins";
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap");
+
+.hero {
+  @include typography-mixins.hero;
+}
+
+.heading1 {
+  @include typography-mixins.heading1;
+}
+
+.heading2 {
+  @include typography-mixins.heading2;
+}
+
+.heading3 {
+  @include typography-mixins.heading3;
+}
+
+.heading4 {
+  @include typography-mixins.heading4;
+}
+
+.heading5 {
+  @include typography-mixins.heading5;
+}
+
+.heading6 {
+  @include typography-mixins.heading6;
+}
+
+.body,
+body {
+  @include typography-mixins.body;
+}
+
+.note {
+  @include typography-mixins.note;
+}
+
+body {
+  @apply text-black;
+  @extend .body;
+}
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    @extend .heading#{$i};
+  }
+}
+
+.bold {
+  @include typography-mixins.bold;
+}
+
+.light {
+  @include typography-mixins.light;
+}
+
+#customTbl tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}

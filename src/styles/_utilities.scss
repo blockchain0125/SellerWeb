@@ -1,0 +1,8 @@
+// typical usage: a row in a parent with fixed width and centered
+// the row should be as wide as the screen
+// For example: "Related products" and "Product reviews" part in Product view page
+@mixin fullWidth {
+  width: 100vw;
+  position: relative;
+  left: calc(50% - 50vw);
+}

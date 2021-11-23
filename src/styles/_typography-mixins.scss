@@ -1,0 +1,104 @@
+@use "variables";
+
+@mixin font-base {
+  font-family: "Titillium Web", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin hero {
+  @include font-base;
+  font-size: 48px;
+  line-height: 117%;
+  @include variables.ipad-and-up {
+    font-size: 64px;
+    line-height: 125%;
+  }
+}
+
+@mixin heading1 {
+  @include font-base;
+  font-size: 32px;
+  line-height: 124%;
+  @include variables.ipad-and-up {
+    font-size: 48px;
+    line-height: 117%;
+  }
+}
+
+@mixin heading2 {
+  @include font-base;
+  font-size: 24px;
+  line-height: 132%;
+  @include variables.ipad-and-up {
+    font-size: 32px;
+    line-height: 124%;
+  }
+}
+
+@mixin heading3 {
+  @include font-base;
+  font-size: 18px;
+  line-height: 132%;
+  @include variables.ipad-and-up {
+    font-size: 24px;
+    line-height: 132%;
+  }
+}
+
+@mixin heading4 {
+  @include font-base;
+  font-size: 16px;
+  line-height: 150%;
+  @include variables.ipad-and-up {
+    font-size: 18px;
+    line-height: 135%;
+  }
+}
+
+@mixin heading5 {
+  @include font-base;
+  font-size: 14px;
+  line-height: 170%;
+  @include variables.ipad-and-up {
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+
+@mixin heading6 {
+  @include font-base;
+  font-size: 12px;
+  line-height: 130%;
+  @include variables.ipad-and-up {
+    font-size: 14px;
+  }
+}
+
+@mixin note {
+  @include font-base;
+  font-size: 8px;
+  line-height: 16px;
+  @include variables.ipad-and-up {
+    font-size: 10px;
+    line-height: 156%;
+  }
+}
+
+@mixin body {
+  @include font-base;
+  font-size: 14px;
+  line-height: 20px;
+  @include variables.ipad-and-up {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@mixin bold {
+  font-weight: 600;
+}
+
+@mixin light {
+  font-weight: 300;
+}

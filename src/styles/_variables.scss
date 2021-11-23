@@ -1,0 +1,102 @@
+// brand colors
+$color-primary: #cc0000;
+$color-white: #fff;
+$color-black: #292929;
+$color-background: #f6f8f9;
+
+// primary colors
+$color-primary01: #b20405;
+
+$color-primary80: #d53232;
+$color-primary60: #de6464;
+$color-primary40: #e89696;
+$color-primary20: #f1c8c8;
+
+// secondary colors
+$color-secondary00: #409aef;
+$color-secondary01: #ecf5fd;
+
+// feedback colors
+$color-success: #00daa1;
+$color-warning: #ff8b00;
+$color-error: #e42526;
+
+// neutral colors
+$color-grey80: #546171;
+$color-grey60: #969ea8;
+$color-grey40: #bbc0c6;
+$color-grey20: #dddfe3;
+$color-grey10: #eeeff1;
+
+// special colors
+$color-star: #fdd446;
+
+// chats users
+$color-user1: #e46a25;
+$color-user2: #e0e425;
+$color-user3: #90e425;
+$color-user4: #25e438;
+$color-user5: #25e494;
+$color-user6: #25e4cd;
+$color-user7: #25d9e4;
+$color-user8: #259fe4;
+$color-user9: #2566e4;
+$color-user10: #2538e4;
+$color-user11: #4b25e4;
+$color-user12: #6225e4;
+$color-user13: #9025e4;
+$color-user14: #e025e4;
+
+// social media colors
+$color-facebook: #3b5998;
+$color-messenger: #0084ff;
+$color-twitter: #00a2f9;
+$color-whatsapp: #75cf6c;
+$color-pinterest: #a5221f;
+$color-google: #ea4335;
+$color-linkedin: #0e76a8;
+
+// other colors
+$color-icon-bg: #f8f9fa;
+
+// site max width
+$site-width: 1137px;
+$header-content-width: 1366px;
+
+// mixins
+@mixin hide-element-on-mobile {
+  @media only screen and (min-width: 300px) {
+    display: none;
+  }
+}
+
+@mixin hide-element-on-ipad-and-up {
+  @media only screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+@mixin show-element-on-ipad-and-up {
+  @media only screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+// breakpoints
+@mixin ipad-and-up {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin intermediate {
+  @media only screen and (min-width: 850px) {
+    @content;
+  }
+}
+
+@mixin product-card-breakpoint {
+  @media only screen and (min-width: 1041px) {
+    @content;
+  }
+}

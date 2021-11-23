@@ -1,0 +1,17 @@
+import { classNamesFunction, styled } from "@fluentui/utilities";
+import React from "react";
+import { getStyles } from "./{{name}}.styles";
+import { I{{name}}Props, I{{name}}StyleProps, I{{name}}Styles } from "./{{name}}.types";
+
+const getClassNames = classNamesFunction<I{{name}}StyleProps, I{{name}}Styles>();
+
+const {{name}}Base = ({ styles }: I{{name}}Props) => {
+    const { root } = getClassNames(styles);
+    return (
+        <div className={root}>
+            {{name}} Placeholder
+        </div>
+    );
+};
+
+export const {{name}} = styled<I{{name}}Props, I{{name}}StyleProps, I{{name}}Styles>({{name}}Base, getStyles);

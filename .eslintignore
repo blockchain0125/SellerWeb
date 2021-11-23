@@ -1,0 +1,8 @@
+stories/
+.eslintrc.js
+next.config.js
+postcss.config.js
+tailwind.config.js
+plopfile.js
+craco.config.js
+typings/

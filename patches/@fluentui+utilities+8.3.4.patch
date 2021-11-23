@@ -1,0 +1,13 @@
+diff --git a/node_modules/@fluentui/utilities/lib/styled.js b/node_modules/@fluentui/utilities/lib/styled.js
+index 3af9930..f55e2bb 100644
+--- a/node_modules/@fluentui/utilities/lib/styled.js
++++ b/node_modules/@fluentui/utilities/lib/styled.js
+@@ -13,7 +13,7 @@ export function styled(Component, baseStyles, getProps, customizable, pure) {
+         var additionalProps = getProps ? getProps(props) : undefined;
+         // eslint-disable-next-line @typescript-eslint/no-explicit-any
+         var cache = (styles.current && styles.current.__cachedInputs__) || [];
+-        if (!styles.current || customizedStyles !== cache[1] || props.styles !== cache[2]) {
++        if (!styles.current || customizedStyles !== cache[1] || props.styles !== cache[2] || baseStyles !== cache[0]) {
+             // Using styled components as the Component arg will result in nested styling arrays.
+             var concatenatedStyles = function (styleProps) {
+                 return concatStyleSetsWithProps(styleProps, baseStyles, customizedStyles, props.styles);

@@ -1,0 +1,10 @@
+import IconProps from "./IconProps";
+import IconWrapper from "./IconWrapper";
+
+export default function ArrowBoldRightIcon({ ...wrapperProps }: IconProps): React.ReactElement {
+  return (
+    <IconWrapper viewBox={"0 0 24 16"} width={16} height={24} {...wrapperProps}>
+      <path d="M0.692686 20.5367C-0.183211 21.2865 -0.235456 22.5505 0.575994 23.3599C1.34474 24.1267 2.61286 24.2104 3.48897 23.5795L3.63121 23.4677L15.3073 13.4721C16.1865 12.7195 16.2288 11.4601 15.4339 10.6587L15.3084 10.542L3.63225 0.533152C2.75689 -0.217214 1.38899 -0.169771 0.576965 0.639117C-0.192325 1.40543 -0.186735 2.58024 0.560277 3.33979L0.691639 3.4624L9.80248 11.2729C10.2401 11.6481 10.2658 12.2801 9.85976 12.6845L9.80196 12.7379L0.692686 20.5367Z" />
+    </IconWrapper>
+  );
+}

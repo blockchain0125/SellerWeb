@@ -1,0 +1,6 @@
+/.idea/
+/.eslintcache
+/yarn-error.log
+/build
+/node_modules
+

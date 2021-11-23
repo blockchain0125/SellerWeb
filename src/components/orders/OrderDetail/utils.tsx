@@ -1,0 +1,37 @@
+// temporary data
+export const orderDetailsData = {
+  productName: "HyperX Cloud II - Gaming Headset, 7.1 Surround Sound",
+  sku: 185885,
+  qty: 1,
+  asin: "B07CZP3XSG",
+  price: "72.00",
+  discountPrice: "54.00",
+  percentOff: 30,
+  deliveryOptionSelected: "2: Collection From Fulfillment Center",
+  purchaseDate: "Wed, Apr 17, 2021 08:00am",
+  collectionAddress: "1-10, Dhakuria E Rd, Safui Para, Neli Nagra, Haltu, Kolkata, West Bengal 700078, India",
+  collectionAvailableFrom: "Thur, Apr 10, 2021 08:00am",
+  shippingService: "Standard UPS",
+  shipDate: "Thur, Apr 10, 2021 08:00am",
+  shippingCarrier: "USPS",
+  shippingClassService: "USPS First Class",
+  fulfillment: "Seller",
+  deliveryAddress: "1-10, Dhakuria E Rd, Safui Para, Neli Nagra, Haltu, Kolkata, West Bengal 700078, India",
+  deliveryDate: "Thur, Apr 10, 2021 08:00am",
+  billingCountry: "USA",
+  paymentMethods: "Standard",
+  contactBuyer: "Patric Roy",
+  itemsTotal: "54.00",
+  shippingTotal: "10.00",
+  deliveryCost: "10.00",
+  grandTotal: "64.00",
+};
+
+export const orderPaymentStatusData = {
+  paymentStatus: "Payment Complete",
+  deliveryDate: "Day June 1, 2021 - 08:00am",
+  deliveryType: "Delivered",
+  contactName: "Eli Zager",
+  abn: "000000000000000000",
+  trackingId: "93000-1200-11100-2356",
+};
